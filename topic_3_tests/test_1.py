@@ -1,13 +1,13 @@
 import unittest
 from topic_3_main import main_calc
 
-# Test set 1:, price under 10
+# Test set 1:, price under 10.00
 # price: under 10, 5 cash, 10%
 # price: under 10, 5 cash, 15%
 # price: under 10, 5 cash, 20%
 # price: under 10, 10 cash, 10%
-# ?
-# ?
+# price: under 10, 10 cash, 15%
+# price: under 10, 10 cash, 20%
 
 
 class MyTestCase(unittest.TestCase):  # tax rate 6%, shipping rate $5.95
