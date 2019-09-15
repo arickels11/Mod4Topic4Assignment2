@@ -18,7 +18,7 @@ class MyTestCase(unittest.TestCase):  # tax rate 6%, shipping rate $7.95
         self.assertEqual(16.96, main_calc.calculate_order(15.00, 5, 15))
 
     def test_10to30_3(self):
-        self.assertEqual(18.96, main_calc.calculate_order(17.99, 5, 20))
+        self.assertEqual(18.97, main_calc.calculate_order(17.99, 5, 20))
 
     def test_10to30_4(self):
         self.assertEqual(17.49, main_calc.calculate_order(20.00, 10, 10))

@@ -20,8 +20,14 @@ def calculate_order(price, cash_coupon, percent_coupon):
             return 5.95  # if coupons get price to under zero, customer only pays shipping costs
         else:
             return round((((price - cash_coupon)*(1 - (percent_coupon / 100)))*1.06) + 5.95, 2)
+    elif 10.00 <= price < 30.00:
+        return round((((price - cash_coupon) * (1 - (percent_coupon / 100))) * 1.06) + 7.95, 2)
+    elif 30.00 <= price < 50.00:
+        return round((((price - cash_coupon) * (1 - (percent_coupon / 100))) * 1.06) + 11.95, 2)
+    elif price >= 50.00:
+        return round((((price - cash_coupon) * (1 - (percent_coupon / 100))) * 1.06), 2)
     else:
-        pass
+        print("Please correct your input")
 
 
 if __name__ == '__main__':
