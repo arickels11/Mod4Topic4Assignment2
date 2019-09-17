@@ -2,10 +2,16 @@
 Author: Alex Rickels
 Module 3 Assignment: Basic Input and Format Output """
 
+# Code works as expected, with try/except/else/finally block used appropriately.
+
 
 def average(s1, s2, s3):
-    if s2 < 0:
+    if s1 < 0:
         raise ValueError
+    elif s2 < 0:
+        raise ValueError
+    # elif s3 < 0:
+        # raise ValueError
     else:
         total = float(s1 + s2 + s3)
         avg = float(total/3)
