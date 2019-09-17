@@ -4,9 +4,12 @@ Module 3 Assignment: Basic Input and Format Output """
 
 
 def average(s1, s2, s3):
-    total = float(s1 + s2 + s3)
-    avg = float(total/3)
-    return avg
+    if s1 < 0:
+        return -1
+    else:
+        total = float(s1 + s2 + s3)
+        avg = float(total/3)
+        return avg
 
 
 if __name__ == '__main__':
