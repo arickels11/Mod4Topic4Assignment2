@@ -4,7 +4,7 @@ import unittest
 
 class MyTestCase(unittest.TestCase):
 
-    def test_input_validation_if(self):
+    def test_input_validation_with_if(self):
         self.assertEqual(-1, validation_with_if.average(-90, 90, 95))
 
 
