@@ -7,9 +7,9 @@ def average(s1, s2, s3):
     if s1 < 0:
         raise ValueError
     else:
-    total = float(s1 + s2 + s3)
-    avg = float(total/3)
-    return avg
+        total = float(s1 + s2 + s3)
+        avg = float(total/3)
+        return avg
 
 
 if __name__ == '__main__':
