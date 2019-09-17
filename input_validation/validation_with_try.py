@@ -1,6 +1,6 @@
 """ Class: CIS 189
 Author: Alex Rickels
-Module 3 Assignment: Basic Input and Format Output"""
+Module 3 Assignment: Basic Input and Format Output """
 
 
 def average(s1, s2, s3):
