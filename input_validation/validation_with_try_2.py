@@ -10,8 +10,8 @@ def average(s1, s2, s3):
         raise ValueError
     elif s2 < 0:
         raise ValueError
-    # elif s3 < 0:
-        # raise ValueError
+    elif s3 < 0:
+        raise ValueError
     else:
         total = float(s1 + s2 + s3)
         avg = float(total/3)
