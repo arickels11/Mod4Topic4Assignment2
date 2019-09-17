@@ -4,7 +4,7 @@ Module 3 Assignment: Basic Input and Format Output """
 
 
 def average(s1, s2, s3):
-    if s1 < 0:
+    if s2 < 0:
         raise ValueError
     else:
         total = float(s1 + s2 + s3)
