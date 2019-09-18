@@ -25,8 +25,11 @@ if __name__ == '__main__':
     score_1 = float(input("What was your first score?"))
     score_2 = float(input("What was your second score?"))
     score_3 = float(input("What was your third score?"))
-    average_scores = average(score_1, score_2, score_3)
-    print(last_name + ", " + first_name + " age: " + age + " average grade: " + str(average_scores))
+    try:
+        average_scores = average(score_1, score_2, score_3)
+        print(last_name + ", " + first_name + " age: " + age + " average grade: " + str(average_scores))
+    except ValueError:
+        print("Value Error, no negatives")
 
 
 # test 1: 85, 90, 95: expected: 90 PASS
